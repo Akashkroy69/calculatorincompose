@@ -36,11 +36,30 @@ class CalculatorViewModel : ViewModel() {
     }
 
     private fun performDeletion() {
-        TODO("Not yet implemented")
+        //when performs checking the condition in the written order and then it does not
+        // check further if it finds a true statement.
+        // So we have to write the code in that way.
+        //
+        when {
+
+            state.secondInput.isNotBlank() -> state = state.copy(
+                secondInput = state.secondInput.dropLast(1)
+            )
+            state.operator != null -> state = state.copy(
+                operator = null
+            )
+            state.firstInput.isNotBlank() -> state = state.copy(
+                firstInput = state.firstInput.dropLast(1)
+            )
+        }
     }
 
     private fun enterOperator(operator: CalculatorOperator) {
-
+        if (state.firstInput.isNotBlank()) {
+            state = state.copy(
+                operator = operator
+            )
+        }
     }
 
     private fun takeInputs(number: Int) {

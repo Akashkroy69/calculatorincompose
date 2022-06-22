@@ -62,7 +62,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                        //onClickAction(CalculatorAction.Del)
+                        onClickAction(CalculatorAction.Del)
                     })
                 DesignButton(
                     symbol = "pow",
@@ -71,7 +71,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                        //onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Power))
+                        onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Power))
                     })
             }
             Row(
@@ -125,7 +125,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                        // onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Division))
+                        onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Division))
                     })
             }
             Row(
@@ -207,7 +207,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                        // onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Subtraction))
+                         onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Subtraction))
                     })
             }
             Row(
@@ -248,7 +248,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                        //  onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Addition))
+                         onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Addition))
                     })
             }
             Row(
@@ -271,7 +271,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellowishWhite),
                     onClick = {
-                        //   onClickAction(CalculatorAction.Decimal)
+                        //  onClickAction(CalculatorAction.Decimal)
                     })
                 DesignButton(
                     symbol = "=",

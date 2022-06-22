@@ -9,5 +9,5 @@ val Teal200 = Color(0xFF03DAC5)
 
 
 
-val yellow = Color(0xFFFDBF06)
-val yellowishWhite = Color(0xFFFAF0E0)
+val pink = Color(0xFFD00AF1)
+val pinkishishWhite = Color(0xFFD7BEDB)

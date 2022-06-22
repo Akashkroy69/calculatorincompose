@@ -12,8 +12,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.calculatorincompose.ui.theme.yellow
-import com.example.calculatorincompose.ui.theme.yellowishWhite
+import com.example.calculatorincompose.ui.theme.pink
+import com.example.calculatorincompose.ui.theme.pinkishishWhite
 
 //this will be used to design a keypad
 @Composable
@@ -51,7 +51,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(2f)
                         .aspectRatio(2f)
-                        .background(yellow),
+                        .background(pink),
                     onClick = {
                         onClickAction(CalculatorAction.Clear)
                     })
@@ -60,7 +60,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellow),
+                        .background(pink),
                     onClick = {
                         onClickAction(CalculatorAction.Del)
                     })
@@ -69,7 +69,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellow),
+                        .background(pink),
                     onClick = {
                         onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Power))
                     })
@@ -83,13 +83,13 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellow),
+                        .background(pink),
                     onClick = {
-                        /*  onClickAction(
-                              CalculatorAction.TrigonometricCalculation(
-                                  TrigonometricFunctions.Sin
-                              )
-                          )*/
+                        onClickAction(
+                            CalculatorAction.TrigonometricCalculation(
+                                TrigonometricFunctions.Sin
+                            )
+                        )
 
                     })
                 DesignButton(
@@ -97,33 +97,33 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellow),
+                        .background(pink),
                     onClick = {
-                        /* onClickAction(
-                             CalculatorAction.TrigonometricCalculation(
-                                 TrigonometricFunctions.Cos
-                             )
-                         )*/
+                        onClickAction(
+                            CalculatorAction.TrigonometricCalculation(
+                                TrigonometricFunctions.Cos
+                            )
+                        )
                     })
                 DesignButton(
                     symbol = "tan",
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellow),
+                        .background(pink),
                     onClick = {
-                        /* onClickAction(
-                             CalculatorAction.TrigonometricCalculation(
-                                 TrigonometricFunctions.Tan
-                             )
-                         )*/
+                        onClickAction(
+                            CalculatorAction.TrigonometricCalculation(
+                                TrigonometricFunctions.Tan
+                            )
+                        )
                     })
                 DesignButton(
                     symbol = "/",
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellow),
+                        .background(pink),
                     onClick = {
                         onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Division))
                     })
@@ -137,7 +137,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellowishWhite),
+                        .background(pinkishishWhite),
                     onClick = {
                         onClickAction(CalculatorAction.NumberEntry(7))
                     })
@@ -146,7 +146,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellowishWhite),
+                        .background(pinkishishWhite),
                     onClick = {
                         onClickAction(CalculatorAction.NumberEntry(8))
                     })
@@ -155,7 +155,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellowishWhite),
+                        .background(pinkishishWhite),
                     onClick = {
                         onClickAction(CalculatorAction.NumberEntry(9))
                     })
@@ -164,7 +164,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellow),
+                        .background(pink),
                     onClick = {
                         onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Multiplication))
                     })
@@ -178,7 +178,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellowishWhite),
+                        .background(pinkishishWhite),
                     onClick = {
                         onClickAction(CalculatorAction.NumberEntry(4))
                     })
@@ -187,7 +187,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellowishWhite),
+                        .background(pinkishishWhite),
                     onClick = {
                         onClickAction(CalculatorAction.NumberEntry(5))
                     })
@@ -196,7 +196,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellowishWhite),
+                        .background(pinkishishWhite),
                     onClick = {
                         onClickAction(CalculatorAction.NumberEntry(6))
                     })
@@ -205,9 +205,9 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellow),
+                        .background(pink),
                     onClick = {
-                         onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Subtraction))
+                        onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Subtraction))
                     })
             }
             Row(
@@ -219,7 +219,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellowishWhite),
+                        .background(pinkishishWhite),
                     onClick = {
                         onClickAction(CalculatorAction.NumberEntry(1))
                     })
@@ -228,7 +228,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellowishWhite),
+                        .background(pinkishishWhite),
                     onClick = {
                         onClickAction(CalculatorAction.NumberEntry(2))
                     })
@@ -237,7 +237,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellowishWhite),
+                        .background(pinkishishWhite),
                     onClick = {
                         onClickAction(CalculatorAction.NumberEntry(3))
                     })
@@ -246,9 +246,9 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellow),
+                        .background(pink),
                     onClick = {
-                         onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Addition))
+                        onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Addition))
                     })
             }
             Row(
@@ -260,7 +260,7 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(2f)
                         .aspectRatio(2f)
-                        .background(yellowishWhite),
+                        .background(pinkishishWhite),
                     onClick = {
                         onClickAction(CalculatorAction.NumberEntry(0))
                     })
@@ -269,18 +269,18 @@ fun DesignKeyPad(
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellowishWhite),
+                        .background(pinkishishWhite),
                     onClick = {
-                        //  onClickAction(CalculatorAction.Decimal)
+                        onClickAction(CalculatorAction.Decimal)
                     })
                 DesignButton(
                     symbol = "=",
                     modifier = Modifier
                         .weight(1f)
                         .aspectRatio(1f)
-                        .background(yellow),
+                        .background(pink),
                     onClick = {
-                        // onClickAction(CalculatorAction.Calculate)
+                        onClickAction(CalculatorAction.Calculate)
                     })
             }
 

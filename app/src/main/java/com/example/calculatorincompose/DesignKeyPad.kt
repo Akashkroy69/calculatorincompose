@@ -22,7 +22,7 @@ fun DesignKeyPad(
     modifier: Modifier,
     buttonSpacing: Dp,
     onClickAction: (CalculatorAction) -> Unit
-){
+) {
     Box(modifier = modifier) {
         Column(
             modifier = Modifier
@@ -53,7 +53,7 @@ fun DesignKeyPad(
                         .aspectRatio(2f)
                         .background(yellow),
                     onClick = {
-                       // onClickAction(CalculatorAction.Clear)
+                        onClickAction(CalculatorAction.Clear)
                     })
                 DesignButton(
                     symbol = "Del",
@@ -85,11 +85,11 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                      /*  onClickAction(
-                            CalculatorAction.TrigonometricCalculation(
-                                TrigonometricFunctions.Sin
-                            )
-                        )*/
+                        /*  onClickAction(
+                              CalculatorAction.TrigonometricCalculation(
+                                  TrigonometricFunctions.Sin
+                              )
+                          )*/
 
                     })
                 DesignButton(
@@ -99,11 +99,11 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                       /* onClickAction(
-                            CalculatorAction.TrigonometricCalculation(
-                                TrigonometricFunctions.Cos
-                            )
-                        )*/
+                        /* onClickAction(
+                             CalculatorAction.TrigonometricCalculation(
+                                 TrigonometricFunctions.Cos
+                             )
+                         )*/
                     })
                 DesignButton(
                     symbol = "tan",
@@ -112,11 +112,11 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                       /* onClickAction(
-                            CalculatorAction.TrigonometricCalculation(
-                                TrigonometricFunctions.Tan
-                            )
-                        )*/
+                        /* onClickAction(
+                             CalculatorAction.TrigonometricCalculation(
+                                 TrigonometricFunctions.Tan
+                             )
+                         )*/
                     })
                 DesignButton(
                     symbol = "/",
@@ -125,7 +125,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                       // onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Division))
+                        // onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Division))
                     })
             }
             Row(
@@ -139,7 +139,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellowishWhite),
                     onClick = {
-                      //  onClickAction(CalculatorAction.NumberEntry(7))
+                        onClickAction(CalculatorAction.NumberEntry(7))
                     })
                 DesignButton(
                     symbol = "8",
@@ -148,7 +148,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellowishWhite),
                     onClick = {
-                      //  onClickAction(CalculatorAction.NumberEntry(8))
+                        onClickAction(CalculatorAction.NumberEntry(8))
                     })
                 DesignButton(
                     symbol = "9",
@@ -157,7 +157,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellowishWhite),
                     onClick = {
-                       // onClickAction(CalculatorAction.NumberEntry(9))
+                        onClickAction(CalculatorAction.NumberEntry(9))
                     })
                 DesignButton(
                     symbol = "x",
@@ -166,7 +166,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                       // onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Multiplication))
+                        onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Multiplication))
                     })
             }
             Row(
@@ -180,7 +180,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellowishWhite),
                     onClick = {
-                       // onClickAction(CalculatorAction.NumberEntry(4))
+                        onClickAction(CalculatorAction.NumberEntry(4))
                     })
                 DesignButton(
                     symbol = "5",
@@ -189,7 +189,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellowishWhite),
                     onClick = {
-                       // onClickAction(CalculatorAction.NumberEntry(5))
+                        onClickAction(CalculatorAction.NumberEntry(5))
                     })
                 DesignButton(
                     symbol = "6",
@@ -198,7 +198,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellowishWhite),
                     onClick = {
-                       // onClickAction(CalculatorAction.NumberEntry(6))
+                        onClickAction(CalculatorAction.NumberEntry(6))
                     })
                 DesignButton(
                     symbol = "-",
@@ -207,7 +207,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                       // onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Subtraction))
+                        // onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Subtraction))
                     })
             }
             Row(
@@ -221,7 +221,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellowishWhite),
                     onClick = {
-                      //  onClickAction(CalculatorAction.NumberEntry(1))
+                        onClickAction(CalculatorAction.NumberEntry(1))
                     })
                 DesignButton(
                     symbol = "2",
@@ -230,7 +230,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellowishWhite),
                     onClick = {
-                       // onClickAction(CalculatorAction.NumberEntry(2))
+                        onClickAction(CalculatorAction.NumberEntry(2))
                     })
                 DesignButton(
                     symbol = "3",
@@ -239,7 +239,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellowishWhite),
                     onClick = {
-                       // onClickAction(CalculatorAction.NumberEntry(3))
+                        onClickAction(CalculatorAction.NumberEntry(3))
                     })
                 DesignButton(
                     symbol = "+",
@@ -248,7 +248,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                      //  onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Addition))
+                        //  onClickAction(CalculatorAction.OperatorEntry(CalculatorOperator.Addition))
                     })
             }
             Row(
@@ -262,7 +262,7 @@ fun DesignKeyPad(
                         .aspectRatio(2f)
                         .background(yellowishWhite),
                     onClick = {
-                     //   onClickAction(CalculatorAction.NumberEntry(0))
+                        onClickAction(CalculatorAction.NumberEntry(0))
                     })
                 DesignButton(
                     symbol = ".",
@@ -271,7 +271,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellowishWhite),
                     onClick = {
-                     //   onClickAction(CalculatorAction.Decimal)
+                        //   onClickAction(CalculatorAction.Decimal)
                     })
                 DesignButton(
                     symbol = "=",
@@ -280,7 +280,7 @@ fun DesignKeyPad(
                         .aspectRatio(1f)
                         .background(yellow),
                     onClick = {
-                       // onClickAction(CalculatorAction.Calculate)
+                        // onClickAction(CalculatorAction.Calculate)
                     })
             }
 

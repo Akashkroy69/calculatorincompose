@@ -29,8 +29,9 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     val viewModel = viewModel<CalculatorViewModel>()
+                    val state = viewModel.state
                     DesignKeyPad(
-                        state = CalculatorState(),
+                        state = state,
                         modifier = Modifier
                             .fillMaxWidth()
                             .background(Color.White)
@@ -55,8 +56,9 @@ fun DefaultPreview() {
             color = MaterialTheme.colors.background
         ) {
             val viewModel = viewModel<CalculatorViewModel>()
+            val state = viewModel.state
             DesignKeyPad(
-                state = CalculatorState(),
+                state = state,
                 modifier = Modifier
                     .fillMaxWidth()
                     .background(Color.White)
